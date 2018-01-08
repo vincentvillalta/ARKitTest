@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C454DA4B2003C35400544668 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C454DA4A2003C35400544668 /* art.scnassets */; };
+		C454DA4E2003C41400544668 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C454DA4D2003C41400544668 /* MapViewController.swift */; };
+		C454DA502003C41D00544668 /* ARViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C454DA4F2003C41D00544668 /* ARViewViewController.swift */; };
+		C454DA532003CB6E00544668 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C454DA522003CB6E00544668 /* RoundedButton.swift */; };
 		C4B95C702003C0EE006C3618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B95C6F2003C0EE006C3618 /* AppDelegate.swift */; };
-		C4B95C722003C0EE006C3618 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B95C712003C0EE006C3618 /* ViewController.swift */; };
 		C4B95C752003C0EE006C3618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B95C732003C0EE006C3618 /* Main.storyboard */; };
 		C4B95C772003C0EE006C3618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B95C762003C0EE006C3618 /* Assets.xcassets */; };
 		C4B95C7A2003C0EE006C3618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B95C782003C0EE006C3618 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C454DA4A2003C35400544668 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		C454DA4D2003C41400544668 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C454DA4F2003C41D00544668 /* ARViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewViewController.swift; sourceTree = "<group>"; };
+		C454DA522003CB6E00544668 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		C4B95C6C2003C0EE006C3618 /* ARKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B95C6F2003C0EE006C3618 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4B95C712003C0EE006C3618 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4B95C742003C0EE006C3618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4B95C762003C0EE006C3618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4B95C792003C0EE006C3618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +41,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C454DA4C2003C40500544668 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C454DA4D2003C41400544668 /* MapViewController.swift */,
+				C454DA4F2003C41D00544668 /* ARViewViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C454DA512003CB5900544668 /* Custom Control */ = {
+			isa = PBXGroup;
+			children = (
+				C454DA522003CB6E00544668 /* RoundedButton.swift */,
+			);
+			path = "Custom Control";
+			sourceTree = "<group>";
+		};
+		C454DA542003DABA00544668 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C4B95C782003C0EE006C3618 /* LaunchScreen.storyboard */,
+				C4B95C732003C0EE006C3618 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		C4B95C632003C0EE006C3618 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +87,11 @@
 			isa = PBXGroup;
 			children = (
 				C4B95C6F2003C0EE006C3618 /* AppDelegate.swift */,
-				C4B95C712003C0EE006C3618 /* ViewController.swift */,
-				C4B95C732003C0EE006C3618 /* Main.storyboard */,
+				C454DA542003DABA00544668 /* Storyboards */,
+				C454DA512003CB5900544668 /* Custom Control */,
+				C454DA4C2003C40500544668 /* View Controllers */,
 				C4B95C762003C0EE006C3618 /* Assets.xcassets */,
-				C4B95C782003C0EE006C3618 /* LaunchScreen.storyboard */,
+				C454DA4A2003C35400544668 /* art.scnassets */,
 				C4B95C7B2003C0EE006C3618 /* Info.plist */,
 			);
 			path = ARKitDemo;
@@ -124,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4B95C7A2003C0EE006C3618 /* LaunchScreen.storyboard in Resources */,
+				C454DA4B2003C35400544668 /* art.scnassets in Resources */,
 				C4B95C772003C0EE006C3618 /* Assets.xcassets in Resources */,
 				C4B95C752003C0EE006C3618 /* Main.storyboard in Resources */,
 			);
@@ -136,7 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4B95C722003C0EE006C3618 /* ViewController.swift in Sources */,
+				C454DA532003CB6E00544668 /* RoundedButton.swift in Sources */,
+				C454DA4E2003C41400544668 /* MapViewController.swift in Sources */,
+				C454DA502003C41D00544668 /* ARViewViewController.swift in Sources */,
 				C4B95C702003C0EE006C3618 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
